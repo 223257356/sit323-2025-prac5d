@@ -17,4 +17,10 @@ Dockerizing the Calculator Microservice:
 8. In the CLI, login to Docker was done using the command 'docker login'.
 9. The image was then tagged using command 'docker tag sit323-2025-prac5p-web wongyj/sit323-2025-prac5p-web:latest'.
 10. The image was finally pushed using command 'docker push wongyj/sit323-2025-prac5p-web:latest'.
-# sit323-2025-prac5p
+
+Publishing the Microservice to Google Cloud:
+11. Google Cloud was accessed using university email, project was set using the given project-id as shown in the email.
+12. Docker was authenticated with Google Cloud using 'gcloud auth configure-docker australia-southeast2-docker.pkg.dev'.
+13. The Docker image from previous task, Task 5.1P, was tagged with command 'docker tag sit3232025prac5p:latest australia-southeast2-docker.pkg.dev/sit323-25t1-wong-87457ef/sit323-2025-prac5d/sit3232025prac5p:latest'.
+14. The Docker image was then pushed to the cloud using command 'docker push australia-southeast2-docker.pkg.dev/sit323-25t1-wong-87457ef/sit323-2025-prac5d/sit3232025prac5p:latest'.
+15. The test image was run locally using command 'docker run -p 3001:3000 australia-southeast2-docker.pkg.dev/sit323-25t1-wong-87457ef/sit323-2025-prac5d/sit3232025prac5p:latest'.
